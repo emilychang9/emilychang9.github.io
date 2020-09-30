@@ -1,20 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="emilycc2000@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,32 +34,10 @@ if($_POST["submit"]) {
 
     <h1>Contact Information</h1>
     <div class="description">
-      <p>Feel free to reach out to me on <a href="www.linkedin.com/in/emily-chang-22b683186">LinkedIn</a> or via email below.</p>
+      <p>Feel free to reach out to me on <a href="www.linkedin.com/in/emily-chang-22b683186">LinkedIn</a> or via email.</p>
+      <p><b>School email: echang9@cs.washington.edu</b><p>
+      <p><b>Personal (recommended, I check this one more often):</b> emilycc2000@gmail.com</p>
     </div>
-
-    <!-- EMAIL FORM -->
-    <?=$thankYou ?>
-    <div class="container">
-      <form method="post" action="contact.php">
-        <div>
-          <label><b>Name:</b></label>
-          <input name="sender">
-        </div>
-        <div>
-          <label><b>Email address:</b></label>
-          <input name="senderEmail">
-        </div>
-
-        <div>
-          <label><b>Message:</b></label>
-        </div>
-        <div>
-          <textarea rows="5" cols="35" name="message"></textarea>
-        </div>
-          <input id="submit-btn" type="submit" name="submit">
-      </form>
-    </div>
-    <!-- END EMAIL FORM -->
 
     <hr>
     <footer>
