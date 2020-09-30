@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Projects Index</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a class= "active" href="projects.html">Projects</a>
+        <a href="contact.php">Contact</a>
+      </div>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="contact.php">Contact</a>
+    </div>
+
+    <div style="padding-bottom: 50px">
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    </div>
+
+    <h1>My Projects</h1>
+
+    <!-- <h2>The Creator</h2> -->
+    <div class="description">
+      <p>This is where you can find my most recent projects, whether they're personal projects intended for my own use or team projects. Click on the title of each project for more information!</p>
+    </div>
+
+    <div class="grid-container">
+      <div class="proj-container">
+        <h3><a href="VC.html">Virtual Cookbook</a></h3>
+        <img src="img/VC_Icon.jpg" width="200px" height="200px" alt="Virtual Cookbook App Icon"/>
+        <p>A simple IOS application that I built to store and display my recipes.</p>
+      </div>
+
+      <div class="proj-container">
+        <h3><a href="safeEats.html">Safe Eats</a></h3>
+        <img src="img/SafeEats.jpeg" width="200px" height="200px" alt="Safe Eats Logo"/>
+        <p>A team project for Hack'20 that encourages informed decisions while supporting restaurants. Recipient of the "Best Use of Google Cloud" award</p>
+      </div>
+
+      <div class="proj-container">
+        <h3><a href="allianceTool.html">Alliance Management Tool</a></h3>
+        <img src="img/MCOCChart.jpg" width="200px" height="200px" alt="Alliance Management Tool Homepage"/>
+        <p>A website built to help gamers manage their teams and strategize.</p>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p><b>School&nbsp;email:</b>&nbsp;echang9@cs.washington.edu | <b>Personal&nbsp;email&nbsp;(preferred):</b>&nbsp;emilycc2000@gmail.com | <a href="www.linkedin.com/in/emily-chang-22b683186">LinkedIn</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+body {
+  background-color: #eeeae3;
+}
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1, h2, h3, p , a, label {
+  font-family: 'Arsenal', sans-serif;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+}
+a {
+  color: darkcyan;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.proj-container {
+  justify-content: center;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  margin: 30px;
+}
+.description {
+  display: block;
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  width: 100%;  
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: darkcyan;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* The sidebar menu */
+.sidebar {
+  display: none;
+  float: right;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: darkcyan;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  top: 0;
+  text-align: right;
+  margin-right: 25px;
+  font-size: 40px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  display: none;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: darkcyan;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* Styling the email form */
+#submit-btn {
+  font-size: 20px;
+  background-color: white;
+  float: right;
+  border: solid 3px darkcyan;
+}
+
+.back-btn {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+textarea, input {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* FOR MOBILE/SMALL SCREENS */
+@media screen and (max-width: 500px) {
+  .container {
+    padding-top: 30px;
+  }
+  .topnav {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 20px;
+  }
+  .sidebar a.active {
+    background-color: #eeeae3;
+    border: solid 3px darkcyan;
+    border-radius: 5px;
+    color: black;
+  }
+  .openbtn {
+    display: flex;
+    float: right;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
